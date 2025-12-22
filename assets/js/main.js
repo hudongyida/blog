@@ -224,7 +224,7 @@ function renderHome(filterCat = null) {
     // 切换视图容器显隐
     document.getElementById('home-view').classList.remove('hidden');
     document.getElementById('article-view').classList.add('hidden');
-    document.title = "Chigengyi Blog";
+    document.title = "hudong の Blog";
     
     const label = document.getElementById('current-filter-label');
     const name = document.getElementById('filter-name');
@@ -395,7 +395,7 @@ async function loadPost(postInfo, query) {
         const text = await res.text();
         const content = text.replace(/^\s*---[\s\S]*?---/, '');
         
-        document.title = `${postInfo.title} - Chigengyi Blog`;
+        document.title = `${postInfo.title} - hudong の Blog`;
 
         // 构建日期显示
         let dateHtml = `<span>📅 发表于：${postInfo.date}</span>`;
@@ -403,7 +403,7 @@ async function loadPost(postInfo, query) {
 
         // --- 构建版权信息卡片 HTML ---
         const currentLink = window.location.href; // 获取当前页面完整链接
-        const authorName = "Chigengyi"; //在这里修改你的名字
+        const authorName = "hudongyida"; //在这里修改你的名字
         
         const copyrightHtml = `
             <div class="mt-12 mb-6 p-4 rounded-lg border border-blue-100 bg-blue-50/50 dark:bg-slate-800/50 dark:border-slate-700 relative overflow-hidden group">
@@ -436,7 +436,7 @@ async function loadPost(postInfo, query) {
                         </div>
                         <span class="font-bold text-slate-600 dark:text-slate-300 whitespace-nowrap">版权声明：</span>
                         <span class="text-slate-500 dark:text-slate-400">
-                            本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" class="text-primary hover:underline">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="#/" class="text-primary hover:underline">Chigengyi Blog</a>！
+                            本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" class="text-primary hover:underline">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="#/" class="text-primary hover:underline">hudong の Blog</a>！
                         </span>
                     </div>
                 </div>

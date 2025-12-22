@@ -6,7 +6,7 @@ categories: k8s
 ---
 # helm 部署HA Jenkins
 
-# 前期配置
+## 前期配置
 
 创建目录
 
@@ -136,7 +136,7 @@ kubectl apply -f jenkins-pv.yaml
 kubectl apply -f jenkins-sa.yaml
 ```
 
-# 配置helm chart包
+## 配置helm chart包
 
 ```bash
 helm fetch jenkinsci/jenkins --untar
@@ -168,7 +168,7 @@ annotations: {}
   nodePort: 30000
 ```
 
-# 部署
+## 部署
 
 ```bash
 helm install -n jenkins jenkins jenkins/
@@ -206,7 +206,7 @@ NAME        READY   STATUS    RESTARTS   AGE
 jenkins-0   2/2     Running   0          7m29s
 ```
 
-# 访问
+## 访问
 
 查看SVC
 
