@@ -1,0 +1,12 @@
+[
+    {
+        "title": "helm 部署HA Jenkins",
+        "date": "2025-12-22",
+        "lastupdate": "2025-12-22",
+        "summary": "helm 部署HA Jenkins 前期配置 创建目录 bash mkdir jenkins cd jenkins/ 创建 名称空间 bash kubectl create ns jenkins 创建Jenkins-pv资源清单jenkin...",
+        "file": "2025-12-22-helm-ha-jenkins.md",
+        "slug": "helm-ha-jenkins",
+        "category": "k8s",
+        "url_path": "k8s/helm-ha-jenkins"
+    }
+]
