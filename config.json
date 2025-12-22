@@ -8,5 +8,75 @@
         "slug": "helm-ha-jenkins",
         "category": "k8s",
         "url_path": "k8s/helm-ha-jenkins"
+    },
+    {
+        "title": "使用Github Action cicd到阿里云ACK集群",
+        "date": "2025-10-13",
+        "lastupdate": "2025-10-14",
+        "summary": "项目介绍 这个项目是一个2048小游戏的demo,通过Github Action CD到阿里云的ACK集群，这个项目中的流水线脚本是我自己编写的，2048小游戏本身是其他开源项目移植，该项目是为了让各位更好的感受CI/CD流程。详细请查阅我...",
+        "file": "2025-10-13-2048demo_cicd_to_ack.md",
+        "slug": "2048demo_cicd_to_ack",
+        "category": "k8s",
+        "url_path": "k8s/2048demo_cicd_to_ack"
+    },
+    {
+        "title": "3 VMware虚拟网络和RHEL系统网络",
+        "date": "2025-09-30",
+        "lastupdate": "2025-10-3",
+        "summary": "前言 在这一章中我会向你讲述VMware网络和RHEL系统网卡的配置，在我刚刚开始学习Linux，使用VMware虚拟机进行实验的时候，VMware网络也曾要是十分的头疼，而且但是我几乎找遍了国内的各大论坛几乎没看到有几篇文章系统性的讲述了...",
+        "file": "2025-10-3-3VMware_net+RHEL_net.md",
+        "slug": "2025-10-3-3VMware_net+RHEL_net",
+        "category": "Linux-basis",
+        "url_path": "Linux-basis/2025-10-3-3VMware_net+RHEL_net"
+    },
+    {
+        "title": "2 Vim编辑器",
+        "date": "2025-09-28",
+        "lastupdate": "2025-09-29",
+        "summary": "前言 vim编辑器的强大之处在于你在编辑文本的时候双手几乎不用离开键盘就可以完成文本的编辑，并且使用不同的快捷键达成不同的效果，但是对于习惯使用键鼠+GUI编辑文本的人来说，一下子需要适应完全键盘的编辑模式，实属有些许困难，这篇文章我会尽量...",
+        "file": "2025-09-29-2vim.md",
+        "slug": "2vim",
+        "category": "Linux-basis",
+        "url_path": "Linux-basis/2vim"
+    },
+    {
+        "title": "1 Linux基础命令",
+        "date": "2025-09-25",
+        "lastupdate": "2025-09-27",
+        "summary": "Linux和RHEL 在上一篇文章中已经简单的介绍了一下Linux，这里再进行一点补充,Linux内核并不等于LInux发行版。Linux发行版是指以Linux内核开发的，将GNU工具，GUI环境打包发布的，发行版操作系统。比较知名的发行版...",
+        "file": "2025-09-27-1Linux-basis-command.md",
+        "slug": "1Linux-basis-command",
+        "category": "Linux-basis",
+        "url_path": "Linux-basis/1Linux-basis-command"
+    },
+    {
+        "title": "0 VMware和RHEL系统",
+        "date": "2025-09-24",
+        "lastupdate": "2025-09-25",
+        "summary": "文章受众 0基础完全没有接触过LInux的小白，或者LInux基础薄弱，希望系统性学习的新手 Linux 系统介绍 Linux是一种开源的类Unix操作系统，广泛应用于服务器、桌面和嵌入式设备。它以稳定、安全、灵活著称，支持多用户和多任务操...",
+        "file": "2025-09-25-0VMware+Linux install.md",
+        "slug": "0VMware+Linux install",
+        "category": "Linux-basis",
+        "url_path": "Linux-basis/0VMware+Linux install"
+    },
+    {
+        "title": "使用ansible部署k8s",
+        "date": "2025-09-17",
+        "lastupdate": "2025-09-17",
+        "summary": "文章受众 1. 0基础的小白，刚刚开始学Linux，又想搭建一个k8s集群玩玩，感受过程的【建议从环境搭建虚拟机开始看】，如果你想系统性的学习Linux可以留言我的免费专栏\"红帽工程师带你从0开始学Linux\" 2. 有一定的Linux基础...",
+        "file": "2025-09-17-使用ansible部署k8s集群.md",
+        "slug": "使用ansible部署k8s集群",
+        "category": "k8s",
+        "url_path": "k8s/使用ansible部署k8s集群"
+    },
+    {
+        "title": "使用certbot实现ssl证书的自动签发",
+        "date": "2025-09-04",
+        "lastupdate": "2025-09-05",
+        "summary": "使用使用certbot+Let's Encrypt实现ssl证书的自动签发 配置certbot 这里使用的是Rocky Linux 9系统进行的演示，centos7使用yum, ubuntu使用apt 安装certbot shell dnf...",
+        "file": "2025-09-05-certbot-auto-ssl-zh.md",
+        "slug": "certbot-auto-ssl-zh",
+        "category": "Linux-project",
+        "url_path": "Linux-project/certbot-auto-ssl-zh"
     }
 ]

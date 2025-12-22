@@ -4,7 +4,7 @@
   <title>Chigengyi Blog</title>
   <link>https://blog.chigengyi.cn</link>
   <description>分享技术，记录生活</description>
-  <lastBuildDate>Mon, 22 Dec 2025 06:10:51 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 22 Dec 2025 14:15:58 GMT</lastBuildDate>
   <generator>Chigengyi Blog Generator</generator>
   <item>
     <title>helm 部署HA Jenkins</title>
@@ -13,6 +13,62 @@
     <description>helm 部署HA Jenkins 前期配置 创建目录 bash mkdir jenkins cd jenkins/ 创建 名称空间 bash kubectl create ns jenkins 创建Jenkins-pv资源清单jenkin...</description>
     <pubDate>Mon, 22 Dec 2025 00:00:00 -0000</pubDate>
     <category>k8s</category>
+  </item>
+  <item>
+    <title>使用Github Action cicd到阿里云ACK集群</title>
+    <link>https://blog.chigengyi.cn/#/k8s/2048demo_cicd_to_ack</link>
+    <guid>https://blog.chigengyi.cn/#/k8s/2048demo_cicd_to_ack</guid>
+    <description>项目介绍 这个项目是一个2048小游戏的demo,通过Github Action CD到阿里云的ACK集群，这个项目中的流水线脚本是我自己编写的，2048小游戏本身是其他开源项目移植，该项目是为了让各位更好的感受CI/CD流程。详细请查阅我...</description>
+    <pubDate>Mon, 13 Oct 2025 00:00:00 -0000</pubDate>
+    <category>k8s</category>
+  </item>
+  <item>
+    <title>3 VMware虚拟网络和RHEL系统网络</title>
+    <link>https://blog.chigengyi.cn/#/Linux-basis/2025-10-3-3VMware_net+RHEL_net</link>
+    <guid>https://blog.chigengyi.cn/#/Linux-basis/2025-10-3-3VMware_net+RHEL_net</guid>
+    <description>前言 在这一章中我会向你讲述VMware网络和RHEL系统网卡的配置，在我刚刚开始学习Linux，使用VMware虚拟机进行实验的时候，VMware网络也曾要是十分的头疼，而且但是我几乎找遍了国内的各大论坛几乎没看到有几篇文章系统性的讲述了...</description>
+    <pubDate>Tue, 30 Sep 2025 00:00:00 -0000</pubDate>
+    <category>Linux-basis</category>
+  </item>
+  <item>
+    <title>2 Vim编辑器</title>
+    <link>https://blog.chigengyi.cn/#/Linux-basis/2vim</link>
+    <guid>https://blog.chigengyi.cn/#/Linux-basis/2vim</guid>
+    <description>前言 vim编辑器的强大之处在于你在编辑文本的时候双手几乎不用离开键盘就可以完成文本的编辑，并且使用不同的快捷键达成不同的效果，但是对于习惯使用键鼠+GUI编辑文本的人来说，一下子需要适应完全键盘的编辑模式，实属有些许困难，这篇文章我会尽量...</description>
+    <pubDate>Sun, 28 Sep 2025 00:00:00 -0000</pubDate>
+    <category>Linux-basis</category>
+  </item>
+  <item>
+    <title>1 Linux基础命令</title>
+    <link>https://blog.chigengyi.cn/#/Linux-basis/1Linux-basis-command</link>
+    <guid>https://blog.chigengyi.cn/#/Linux-basis/1Linux-basis-command</guid>
+    <description>Linux和RHEL 在上一篇文章中已经简单的介绍了一下Linux，这里再进行一点补充,Linux内核并不等于LInux发行版。Linux发行版是指以Linux内核开发的，将GNU工具，GUI环境打包发布的，发行版操作系统。比较知名的发行版...</description>
+    <pubDate>Thu, 25 Sep 2025 00:00:00 -0000</pubDate>
+    <category>Linux-basis</category>
+  </item>
+  <item>
+    <title>0 VMware和RHEL系统</title>
+    <link>https://blog.chigengyi.cn/#/Linux-basis/0VMware+Linux install</link>
+    <guid>https://blog.chigengyi.cn/#/Linux-basis/0VMware+Linux install</guid>
+    <description>文章受众 0基础完全没有接触过LInux的小白，或者LInux基础薄弱，希望系统性学习的新手 Linux 系统介绍 Linux是一种开源的类Unix操作系统，广泛应用于服务器、桌面和嵌入式设备。它以稳定、安全、灵活著称，支持多用户和多任务操...</description>
+    <pubDate>Wed, 24 Sep 2025 00:00:00 -0000</pubDate>
+    <category>Linux-basis</category>
+  </item>
+  <item>
+    <title>使用ansible部署k8s</title>
+    <link>https://blog.chigengyi.cn/#/k8s/使用ansible部署k8s集群</link>
+    <guid>https://blog.chigengyi.cn/#/k8s/使用ansible部署k8s集群</guid>
+    <description>文章受众 1. 0基础的小白，刚刚开始学Linux，又想搭建一个k8s集群玩玩，感受过程的【建议从环境搭建虚拟机开始看】，如果你想系统性的学习Linux可以留言我的免费专栏"红帽工程师带你从0开始学Linux" 2. 有一定的Linux基础...</description>
+    <pubDate>Wed, 17 Sep 2025 00:00:00 -0000</pubDate>
+    <category>k8s</category>
+  </item>
+  <item>
+    <title>使用certbot实现ssl证书的自动签发</title>
+    <link>https://blog.chigengyi.cn/#/Linux-project/certbot-auto-ssl-zh</link>
+    <guid>https://blog.chigengyi.cn/#/Linux-project/certbot-auto-ssl-zh</guid>
+    <description>使用使用certbot+Let's Encrypt实现ssl证书的自动签发 配置certbot 这里使用的是Rocky Linux 9系统进行的演示，centos7使用yum, ubuntu使用apt 安装certbot shell dnf...</description>
+    <pubDate>Thu, 04 Sep 2025 00:00:00 -0000</pubDate>
+    <category>Linux-project</category>
   </item>
 </channel>
 </rss>
