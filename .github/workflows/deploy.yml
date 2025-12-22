@@ -1,0 +1,59 @@
+name: Deploy My Blog
+
+on:
+  # 监听 main 分支的 push 事件（如果你的分支叫 master，请修改这里）
+  push:
+    branches:
+      - main
+  # 允许手动在 Actions 页面触发
+  workflow_dispatch:
+
+# 设置权限，允许 GITHUB_TOKEN 修改仓库内容和发布 Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 并发控制：防止多个构建同时进行导致冲突
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 构建任务
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code (拉取代码)
+        uses: actions/checkout@v4
+
+      - name: Set up Python (安装 Python)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies (安装依赖 Markdown)
+        run: pip install markdown
+
+      - name: Generate config.json (运行脚本生成配置)
+        run: python generate.py
+
+      - name: Fix Jekyll ignore (创建 .nojekyll 防止 _posts 被忽略)
+        run: touch .nojekyll
+
+      - name: Upload artifact (打包上传)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  # 部署任务
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
