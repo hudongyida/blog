@@ -1,5 +1,15 @@
 [
     {
+        "title": "k8s-MetalLB安装",
+        "date": "2025-12-26",
+        "lastupdate": "2025-12-26",
+        "summary": "k8s-MetalLB安装 概述 MetalLB一个外部网络负载均衡器，可以在k8s中创建LoadBalancer服务，部署后MetalLB会从地址池中分配一个地址给LoadBalancer，这个地址是虚拟的。 安装 先决条件 拥有一个k8...",
+        "file": "2025-12-26-k8s-metallb-dep.md",
+        "slug": "k8s-metallb-dep",
+        "category": "k8s_attachments",
+        "url_path": "k8s_attachments/k8s-metallb-dep"
+    },
+    {
         "title": "helm 部署HA Jenkins",
         "date": "2025-12-22",
         "lastupdate": "2025-12-22",
