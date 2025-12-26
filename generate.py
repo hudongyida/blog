@@ -88,7 +88,7 @@ def generate_rss(posts):
         f'  <link>{BLOG_BASE_URL}</link>',
         f'  <description>{escape(BLOG_DESC)}</description>',
         f'  <lastBuildDate>{email.utils.formatdate(usegmt=True)}</lastBuildDate>',
-        f'  <generator>Chigengyi Blog Generator</generator>'
+        f'  <generator>hudong の Blog Generator</generator>'
     ]
 
     for post in posts:
