@@ -27,11 +27,11 @@ OUTPUT_FILE = 'config.json'
 RSS_FILE = 'rss.xml'
 
 # 【重要】请修改为你的博客实际线上地址，末尾不要带 /
-BLOG_BASE_URL = 'https://blog.chigengyi.cn' 
+BLOG_BASE_URL = 'https://hudongyida.github.io/blog' 
 
 # 博客基本信息
-BLOG_TITLE = "Chigengyi Blog"
-BLOG_DESC = "分享技术，记录生活"
+BLOG_TITLE = "hudong の Blog"
+BLOG_DESC = "hudong の Blog"
 
 def parse_front_matter(content):
     """解析 Markdown 头部的 YAML"""
