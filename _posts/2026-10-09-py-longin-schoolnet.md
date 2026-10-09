@@ -4,7 +4,6 @@ date      : 2026-10-09
 lastupdate: 2026-10-09
 categories: 项目实战
 ---
-# 实战：抓包分析+Python自动登入校园网
 
 ## 前言
 
